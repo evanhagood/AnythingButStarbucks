@@ -17,14 +17,15 @@ public class SecurityConfiguration {
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/login", "/register", "/css/**")
+                        .requestMatchers("/login", "/register")
                             .permitAll()
                         .requestMatchers(PathRequest.toStaticResources().atCommonLocations())
                             .permitAll()
                         .anyRequest()
                             .authenticated()
                 )
-                .formLogin(Customizer.withDefaults())
+                .formLogin(form -> form
+                        .usernameParameter("email"))
                 .logout(Customizer.withDefaults());
 
         return http.build();
