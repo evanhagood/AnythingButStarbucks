@@ -1,0 +1,99 @@
+/* main.css */
+
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #0f172a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* layout */
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 360px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* typography */
+h1 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* forms */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #cbd5f5;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px rgba(99,102,241,0.2);
+}
+
+/* buttons */
+.btn {
+    width: 100%;
+    padding: 0.7rem;
+    background: #6366f1;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #4f46e5;
+}
+
+.form-footer {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #475569; /* muted gray */
+}
+
+.form-footer a {
+    color: #6366f1;        /* same as button */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* errors (for later validation) */
+.error {
+    color: #dc2626;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}

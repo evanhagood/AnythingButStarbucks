@@ -27,16 +27,12 @@ public class SecurityConfiguration {
                             .authenticated()
                 )
                 .formLogin(form -> form
+                        .loginPage("/login")
                         .usernameParameter("email")
                         .permitAll()
                 )
                 .logout(Customizer.withDefaults());
 
         return http.build();
-    }
-
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
     }
 }

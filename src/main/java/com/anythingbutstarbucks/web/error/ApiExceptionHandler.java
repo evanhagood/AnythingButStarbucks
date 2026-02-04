@@ -1,4 +1,4 @@
-package com.anythingbutstarbucks.web.controller.error;
+package com.anythingbutstarbucks.web.error;
 
 import com.anythingbutstarbucks.auth.exception.DisplayNameAlreadyInUseException;
 import com.anythingbutstarbucks.auth.exception.EmailAlreadyInUseException;
