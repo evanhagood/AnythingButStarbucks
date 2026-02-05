@@ -97,3 +97,142 @@ input:focus {
     font-size: 0.9rem;
     margin-top: 0.25rem;
 }
+
+/* main.css */
+
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #0f172a;
+    color: #0f172a;
+}
+
+/* =====================
+   NAVBAR
+   ===================== */
+
+.navbar {
+    width: 100%;
+    height: 64px;
+    background: #020617;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+.navbar-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.navbar-actions {
+    position: relative;
+}
+
+/* Dropdown trigger */
+.navbar-avatar {
+    background: #6366f1;
+    color: white;
+    border-radius: 999px;
+    padding: 0.4rem 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+/* Dropdown menu */
+.dropdown {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 0.5rem);
+    background: white;
+    border-radius: 8px;
+    min-width: 160px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    display: none;
+    overflow: hidden;
+}
+
+/* Show dropdown on hover */
+.navbar-actions:hover .dropdown {
+    display: block;
+}
+
+.dropdown form {
+    margin: 0;
+}
+
+.dropdown button {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.dropdown button:hover {
+    background: #f1f5f9;
+}
+
+/* =====================
+   MAIN CONTENT
+   ===================== */
+
+.main-content {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Placeholder map card */
+.map-card {
+    width: 100%;
+    max-width: 900px;
+    height: 480px;
+    background: #e5e7eb;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #475569;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* =====================
+   FORMS / BUTTONS (existing)
+   ===================== */
+
+.btn {
+    padding: 0.7rem;
+    background: #6366f1;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #4f46e5;
+}
+
+/* errors (for later validation) */
+.error {
+    color: #dc2626;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+

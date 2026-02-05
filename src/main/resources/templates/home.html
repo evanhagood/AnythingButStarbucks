@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anything But Starbucks</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+<div class="app-layout">
+
+    <nav class="navbar">
+        <div class="navbar-title">☕ Anything But Starbucks</div>
+
+        <div class="navbar-actions">
+            <button class="navbar-trigger" type="button">Account ▾</button>
+
+            <div class="dropdown">
+                <form th:action="@{/logout}" method="post">
+                    <input type="hidden"
+                           th:name="${_csrf.parameterName}"
+                           th:value="${_csrf.token}" />
+                    <button type="submit">Log out</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="map-card">
+            Map placeholder — Google Maps / Places API goes here
+        </div>
+    </main>
+
+</div>
+
+</body>
+</html>
